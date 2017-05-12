@@ -3,203 +3,97 @@ $( document ).ready(function(){
 var points = 0;
 var reset = 0;
 $('zero').onclick = reset;
-// 100
+// 100 Answers
 $('#html100c').click(function(){
     points += 100;
   $('#number').text(points);
   console.log("points " + points )
 });
 var correctAnswer = "html100c";
-  $(".html100c").on("click" , function(){
-   if(this.id === correctAnswer){
+  $("#html100col").on("click" , function(e){
+    console.log(this.id === correctAnswer);
+   if(e.target.id === correctAnswer){
     alert("correct");
     console.log('correct answer, should be alert');
-   }else{
+   } else {
     alert("incorrect");
-    //console.log('incorrect answer, should be alert');
+    console.log('incorrect answer, should be alert');
    }
    console.log(this.id);
-// 200
-$('#html200c').click(function(){
-    points += 200;
-  $('#number').text(points);
-  console.log("points " + points )
 });
-var correctAnswer = "html200c";
-  $(".html200c").on("click" , function(){
-   if(this.id === correctAnswer){
-    alert("correct");
-    console.log('correct answer, should be alert');
-   }else{
-    alert("incorrect");
-    //console.log('incorrect answer, should be alert');
-   }
-   console.log(this.id);
-   // 300
-$('#html300c').click(function(){
-    points += 300;
-  $('#number').text(points);
-  console.log("points " + points )
-});
-var correctAnswer = "html300c";
-  $(".html300c").on("click" , function(){
-   if(this.id === correctAnswer){
-    alert("correct");
-    console.log('correct answer, should be alert');
-   }else{
-    alert("incorrect");
-    //console.log('incorrect answer, should be alert');
-   }
-   console.log(this.id);
-   // 400
-$('#html400c').click(function(){
-    points += 400;
-  $('#number').text(points);
-  console.log("points " + points )
-});
-var correctAnswer = "html400c";
-  $(".html400c").on("click" , function(){
-   if(this.id === correctAnswer){
-    alert("correct");
-    console.log('correct answer, should be alert');
-   }else{
-    alert("incorrect");
-    //console.log('incorrect answer, should be alert');
-   }
-   console.log(this.id);
-
-   // CSS100
-   $('#css100d').click(function(){
+// HTML 200
+$('#html200b').click(function(){
     points += 100;
   $('#number').text(points);
   console.log("points " + points )
 });
-var correctAnswer = "css100d";
-  $(".css100d").on("click" , function(){
-   if(this.id === correctAnswer){
+var correctAnswerForHtml2000b = "html200b";
+  $("#html200col").on("click" , function(e){
+    console.log(this.id === correctAnswerForHtml2000b);
+   if(e.target.id === correctAnswerForHtml2000b){
     alert("correct");
     console.log('correct answer, should be alert');
-   }else{
+   } else {
     alert("incorrect");
-    //console.log('incorrect answer, should be alert');
+    console.log('incorrect answer, should be alert');
    }
    console.log(this.id);
-  });
-     // CSS200
-   $('#css200a').click(function(){
-    points += 200;
-  $('#number').text(points);
-  console.log("points " + points )
 });
-var correctAnswer = "css200a";
-  $(".css200a").on("click" , function(){
-   if(this.id === correctAnswer){
-    alert("correct");
-    console.log('correct answer, should be alert');
-   }else{
-    alert("incorrect");
-    //console.log('incorrect answer, should be alert');
-   }
-   console.log(this.id);
-  });
-       // CSS300
-   $('#css300a').click(function(){
-    points += 300;
-  $('#number').text(points);
-  console.log("points " + points )
-});
-var correctAnswer = "css300a";
-  $(".css300a").on("click" , function(){
-   if(this.id === correctAnswer){
-    alert("correct");
-    console.log('correct answer, should be alert');
-   }else{
-    alert("incorrect");
-    //console.log('incorrect answer, should be alert');
-   }
-   console.log(this.id);
-  });
-       // CSS400
-   $('#css400a').click(function(){
-    points += 400;
-  $('#number').text(points);
-  console.log("points " + points )
-});
-var correctAnswer = "css400a";
-  $(".css400a").on("click" , function(){
-   if(this.id === correctAnswer){
-    alert("correct");
-    console.log('correct answer, should be alert');
-   }else{
-    alert("incorrect");
-    //console.log('incorrect answer, should be alert');
-   }
-   console.log(this.id);
-  });
-
-       // jQuery100
-   $('#jQuery100a').click(function(){
+// HTML 300
+$('#html300b').click(function(){
     points += 100;
   $('#number').text(points);
   console.log("points " + points )
 });
-var correctAnswer = "jQuery100a";
-  $(".jQuery100a").on("click" , function(){
-   if(this.id === correctAnswer){
+var correctAnswerForHtml3000b = "html300b";
+  $("#html300col").on("click" , function(e){
+    console.log(this.id === correctAnswerForHtml3000b);
+   if(e.target.id === correctAnswerForHtml3000b){
     alert("correct");
     console.log('correct answer, should be alert');
-   }else{
+   } else {
     alert("incorrect");
-    //console.log('incorrect answer, should be alert');
+    console.log('incorrect answer, should be alert');
    }
    console.log(this.id);
-  });
-
-        // jQuery200
-   $('#jQuery200a').click(function(){
-    points += 200;
+});
+// HTML 400
+$('#html400b').click(function(){
+    points += 100;
   $('#number').text(points);
   console.log("points " + points )
 });
-var correctAnswer = "jQuery200a";
-  $(".jQuery200a").on("click" , function(){
-   if(this.id === correctAnswer){
+var correctAnswerForHtml4000b = "html400b";
+  $("#html400col").on("click" , function(e){
+    console.log(this.id === correctAnswerForHtml4000b);
+   if(e.target.id === correctAnswerForHtml4000b){
     alert("correct");
     console.log('correct answer, should be alert');
-   }else{
+   } else {
     alert("incorrect");
-    //console.log('incorrect answer, should be alert');
+    console.log('incorrect answer, should be alert');
    }
    console.log(this.id);
+});
+// CSS 100
+$('#CSS100b').click(function(){
+    points += 100;
+  $('#number').text(points);
+  console.log("points " + points )
+});
+var correctAnswerForCSS1000b = "html100b";
+  $("#css100col").on("click" , function(e){
+    console.log(this.id === correctAnswerForcss4000b);
+   if(e.target.id === correctAnswerForcss1000b){
+    alert("correct");
+    console.log('correct answer, should be alert');
+   } else {
+    alert("incorrect");
+    console.log('incorrect answer, should be alert');
+   }
+   console.log(this.id);
+});
   });
-
-// //////reset button
-// function reset(points) {
-//   points = 0;
-//   $('#number').text(points);
-// }
-// //////correct functions
-// function add100() {
-
-// }
-// function add200() {
-//   points = points + 200;
-//   $('#number').text(points);
-// }
-// function add300() {
-//   points = points + 300;
-//   $('#number').text(points);
-// }
-// function add400() {
-//   points = points + 400;
-//   $('#number').text(points);
-// }
-// ///////incorrect functions
-// function add500() {
-//   points = points + 500;
-//   $('#number').text(points);
-// }
-// });
 
 
 

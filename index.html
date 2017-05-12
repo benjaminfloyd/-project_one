@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- <script type="text/javascript" src="scripts/soundcloud.player.api.js"></script>
+<script type="text/javascript">
+   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+     player.api_play();
+   });
+</script> -->
 <!-- jQuery -->
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -83,7 +89,7 @@
           <h2></h2>
           <h4 class="modal-title">____ is the most basic building block of the Web</h4>
         </div>
-        <div class="modal-body">
+        <div id="html100col" class="modal-body">
           <button id ="html100a" class= "btn btn-primary btn-lg btn-block""><span>A)</span> What is CSS </button>
           <button id ="html100b" class ="btn btn-primary btn-lg btn-block"><span>B)</span> What is Java </button>
           <button id ="html100c" class="btn-primary btn-lg btn-block""><span>C)</span> What is HTML </button>
@@ -99,10 +105,10 @@
 </div>
 <!--  -->
  <!-- Modal -->
-  <div class="modal fade" id="html100" role="dialog">
-    <div class="modal-dialog">
+<!--    <div class="modal fade" id="html100" role="dialog">
+    <div class="modal-dialog"> -->
 
-      <!-- HTML 100 Modal content-->
+      <!-- HTML 100 Modal content
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -122,21 +128,21 @@
 
     </div>
   </div>
-</div>
+</div> -->
 <!--  -->
 <!--  -->
  <!-- HTML 200 Modal -->
   <div class="modal fade" id="html200" role="dialog">
     <div class="modal-dialog">
 
-      <!-- HTML 100 Modal content-->
+      <!-- HTML 200 Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h2></h2>
           <h4 class="modal-title">____ is the most basic building block of the Web</h4>
         </div>
-        <div class="modal-body">
+        <div id="html200col" class="modal-body">
           <button id ="html200a" class= "btn btn-primary btn-lg btn-block""><span>A)</span> What is CSS </button>
           <button id ="html200b" class ="btn btn-primary btn-lg btn-block"><span>B)</span> 200 </button>
           <button id ="html200c" class="btn-primary btn-lg btn-block""><span>C)</span> What is HTML </button>
@@ -161,7 +167,7 @@
           <h2></h2>
           <h4 class="modal-title">____ is the most basic building block of the Web</h4>
         </div>
-        <div class="modal-body">
+        <div id="html300col" class="modal-body">
           <button id ="html300a" class= "btn btn-primary btn-lg btn-block""><span>A)</span> What is CSS </button>
           <button id ="html300b" class ="btn btn-primary btn-lg btn-block"><span>B)</span> 300 </button>
           <button id ="html300c" class="btn-primary btn-lg btn-block""><span>C)</span> What is HTML </button>
@@ -186,7 +192,7 @@
           <h2></h2>
           <h4 class="modal-title">____ is the most basic building block of the Web</h4>
         </div>
-        <div class="modal-body">
+        <div id="html400col" class="modal-body">
           <button id ="html400a" class= "btn btn-primary btn-lg btn-block""><span>A)</span> What is CSS </button>
           <button id ="html400b" class ="btn btn-primary btn-lg btn-block"><span>B)</span> 400 </button>
           <button id ="html400c" class="btn-primary btn-lg btn-block""><span>C)</span> What is HTML </button>
@@ -212,7 +218,7 @@
           <h2></h2>
           <h4 class="modal-title">100 CSS ?</h4>
         </div>
-        <div class="modal-body">
+        <div id="css100col" class="modal-body">
           <button id ="css100a" class= "btn btn-primary btn-lg btn-block""><span>A)</span> What is CSS </button>
           <button id ="css100b" class ="btn btn-primary btn-lg btn-block"><span>B)</span> What isvugvug Java </button>
           <button id ="css100c" class="btn-primary btn-lg btn-block""><span>C)</span> What is HTML </button>
@@ -586,6 +592,11 @@
                   <div class="clearfix"></div>
                   </div>
       </div>
+      <object height="81" width="100%" id="yourPlayerId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+  <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmatas%2Fhobnotropic&enable_api=true&object_id=yourPlayerId"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmatas%2Fhobnotropic&enable_api=true&object_id=yourPlayerId" type="application/x-shockwave-flash" width="100%" name="yourPlayerId"></embed>
+</object>
 
     <script src="script.js"></script>
 
